@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 import semana1.Exercicio1;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -24,6 +25,9 @@ public class Main {
 				break;
 			case 2:
 				exercicio2();
+				break;
+			case 3:
+				exercicio3();
 				break;
 
 			}
@@ -69,5 +73,18 @@ public class Main {
 		System.out.println("Eu vou executar o exercicio 2 ");
 
 	}
-
+	
+	
+	public static void exercicio3() {
+		
+		// 1 - usando o FOR padrão
+				// listando números de 1 a 10 em ordem crescente
+			
+				System.out.println("Listagem crescente \n");
+				for (int i = 1; i <= 10; i++) {
+					System.out.println(i);
+				}
+		
+	}
+	
 }
