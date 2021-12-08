@@ -1,0 +1,50 @@
+
+
+package br.com.gerenciarZoologico.eliane;
+
+import java.util.Date;
+
+public class Zoologico {
+
+	public static void main(String[] args) {
+		
+
+		Cadastro cad = new Cadastro();
+		
+		cad.codigoAnimal=1;
+		cad.apelido ="Simão";
+		cad.especie = "Macaco";
+		cad.listarAnimal();
+		
+	
+	}
+}
+
+
+package br.com.gerenciarZoologico.eliane;
+
+import java.util.Date;
+
+public class Cadastro {
+
+	int codigoAnimal;
+	char tipoAnimal;
+	int idadeAnimal;
+	Date dataChegada;
+	Date dataLiberacao;
+	String apelido;
+	char sexo;
+	String padraoCorPelo;
+	String especie;
+	Boolean filhote;
+	int qtdFilhotes;
+	
+	
+	
+	public void listarAnimal() {
+		
+		System.out.println("Código..." +codigoAnimal+ "\nEspecie... " +especie+ "\nApelido..." + apelido);
+		
+	}
+
+}
