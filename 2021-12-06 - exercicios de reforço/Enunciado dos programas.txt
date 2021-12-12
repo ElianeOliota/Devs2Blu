@@ -1,0 +1,68 @@
+Seguem o enunciado dos exercícios de reforço para a prova do dia 10/12/2021
+
+1. Faça um programa que receba o valor de um carro e mostre uma tabela 
+   com os seguintes dados: preço final, quantidade de parcelas e valor da parcela. 
+   Considere o seguinte:
+
+   O preço final para compra à vista tem um desconto de 20%;
+   Se for a prazo, a quantidades de parcelas pode ser: 
+      6, 12, 18, 24, 30, 36, 42, 48, 54 e 60.
+		
+   Os percentuais de acréscimo seguem a tabela a seguir.  
+			
+	Parcelas	Acréscimo
+	6		3%
+	12		6%
+	18		9%
+	24		12%
+	30		15%
+	36		18%
+	42		21%
+	48		24%
+	54		27%
+	60		30%
+
+2. Uma agência bancária possui vários clientes que podem fazer investimentos 
+   com rendimentos mensais, conforme a tabela a seguir:
+
+    Tipo	Descrição		Rendimento mensal
+     1		Poupança		1,5%
+     2		Poupança plus		2.0%
+     3		Fundos de renda		4.0%
+			
+   Faça um programa que leia o código do cliente, o tipo da conta e o valor investido 
+   e que calcule e mostre o rendimento mensal de acordo com o tipo do investimento. 
+   Ao final do programa mostre o total de juros pagos. 
+   A leitura terminará quando o código do cliente digitado for menor ou igual a 0.
+
+3. Faça um programa que apresente o menu de opções a seguir, que permita ao usuário 
+   escolher a opção desejada, receba os dados necessários para executar a operação e 
+   mostre o resultado. 
+   Verificar a possibilidade de opção inválida e não se preocupar com as restrições, 
+   como salário inválido.  
+
+		Menu de opções:  
+
+		1. Novo salário
+		2. Férias
+		3. Décimo terceiro
+		4. Sair  
+		Digite a opção desejada :
+
+   Na Opção 1: Receber o salário de um funcionário, calcular e mostrar o novo salário usando as 
+               regras a seguir:  
+		
+		Salários			% aumento
+		Inferior a R$ 350,00		15%
+		De R$ 350,00 a R$ 600,00	10%
+		Acima de R$ 600,00		 5%
+		
+   Na opção 2: Receber o salário de um funcionário, calcular e mostrar o valor de suas férias. 
+               Sabe-se que as férias equivalem ao seu salário acrescido de l/3 do salário atual.  
+
+   Na opção 3: Receber o salário de um funcionário e o número de meses de trabalho na empresa, 
+               no máximo 12, calcular e mostrar o valor do décimo terceiro. 
+               Sabe-se que o décimo terceiro equivale ao seu salário multiplicado pelo número de 
+               meses de trabalho dividido por 12.  
+
+   Na opção 4: sair do programa. 
