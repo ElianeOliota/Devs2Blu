@@ -1,0 +1,54 @@
+--criando uma tabela
+create table alunos(
+codaluno serial,
+nomaluno varchar(30) not null,
+medaluno decimal(4,2),                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+
+primary key (codaluno)
+);
+-- criando um indeci para buscar um aluno
+create index ix_nome on alunos(nomaluno);
+create table notas(
+codaluno integer not null,
+nravalicao integer not null,
+vlrnota decimal(4,2) not null,
+primary key (codaluno,nravalicao));
+
+-- criando a integridade referencial atraves da Foreign key
+alter table notas 
+add constraint fk_alunos_nota
+foreign key (codaluno) 
+references alunos (codaluno);
+
+-- usando comandos dml (insert, update e delete)
+INSERT INTO alunos (nomaluno, medaluno)  VALUES('Maria', null);
+INSERT INTO alunos (nomaluno, medaluno) VALUES('Pedro', null);
+INSERT INTO alunos (nomaluno, medaluno) VALUES('Ana',null);
+select *from notas;
+-- excluindo alunos com commit e rollback manuais
+delete from alunos;
+-- populando a tabela Notas
+insert into notas(codaluno,nravalicao,vlrnota) values (1,1,6.5);
+insert into notas(codaluno,nravalicao,vlrnota) values (2,2,7.5);
+insert into notas(codaluno,nravalicao,vlrnota) values (3,3,9.5);
+select *from notas;
+rollback;
+
+
+select *from alunos;
+
+-- utilizando orde by para ordenar os registros
+-- o padrão de ordenação e ascendente(ASC)
+select 
+n.codaluno,
+n.nravalicao,
+n.vlrnota
+from notas n
+order by n.codaluno ,n.nravalicao desc ;
+--alterando uma nota de um aluno e avaliação especifica
+update  notas 
+set vlrnota =10
+where codaluno =1
+and nravalicao =1;
+commit;
+--Selecionando as notas de uma intervalo de notas especificas
